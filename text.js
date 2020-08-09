@@ -13,3 +13,17 @@ const middleware = (req,res,next) => {
     //middleware는 중간에 끼어들기 때문에 연결을 끊게 만들수도 있음
 }
 */
+
+/* es6 코딩 방식
+
+const {
+    query:{ term:searchingBy }
+} = req;
+위 코드는 아래와 같이 사용할 수 있다.
+const searchingBy = req.query.term;
+
+또한 Object 전달시에도
+res.render{"search", { pageTitle:"Search", searchingBy: searchingBy }}
+일 경우 searchingBy 로 생략가능함.
+
+*/
