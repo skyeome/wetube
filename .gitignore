@@ -119,3 +119,5 @@ package-lock.json
 
 # video folders
 uploads
+# static folders
+static
