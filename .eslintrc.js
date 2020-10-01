@@ -4,16 +4,15 @@ module.exports = {
         "es2020": true,
         "node": true
     },
-    "extends": ["eslint:recommended","plugin:prettier/recommended"],
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
     "parserOptions": {
         "ecmaVersion": 11,
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier":[
-            "error",{
-                endOfLine:"auto",
-            },
-        ],
+        "prettier/prettier": "off",
+        "no-console": "off",
+        "spaced-comment": "off",
+        "no-else-return": "off"
     },
 };
